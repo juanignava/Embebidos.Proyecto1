@@ -6,7 +6,7 @@ from config import db_config
 
 
 # Get the MongoDB client
-client = MongoClient(db_config.URL)
+client = MongoClient(db_config.URL, tls=True, tlsAllowInvalidCertificates=True)
 
 # Get collection
 collection = client.users.users
