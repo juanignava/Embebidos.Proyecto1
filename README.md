@@ -29,6 +29,7 @@
 - To confirm all the configuration run the webs server with `cd server` and `python3 app.py`.
 - Kill the server with ctrl+C.
 - Create a running demon by running the commands (inside `/server`) `cp app-server.service /etc/systemd/system` and then `systemctl start app-server.service`.
+- Last step is to enable the service so ir runs when the system boots, for this run `systemctl enable app-service.service`
 
 #### Stepts to run the server for the next times
 
